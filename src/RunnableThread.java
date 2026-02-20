@@ -1,4 +1,4 @@
-public class MyRunnable implements Runnable {
+public class RunnableThread implements Runnable {
 
     public void run() {
         for (int i = 1; i <= 5; i++) {
@@ -7,7 +7,7 @@ public class MyRunnable implements Runnable {
     }
 
     public static void main(String[] args) {
-        MyRunnable obj = new MyRunnable();
+        RunnableThread obj = new RunnableThread();
         Thread t = new Thread(obj);
         t.start();
     }
